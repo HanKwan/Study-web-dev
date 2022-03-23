@@ -1,80 +1,45 @@
-const firstName = 'Han';
-const middleName = 'Kwan';
-const lastName = 'Saing';
-let hello = (`Hello, my name is ${firstName} ${middleName} ${lastName}`);
-hello += ` and nice to meet u`;
-console.log(hello);
+let count = 0;
+const numbers = document.querySelector('#numbers');
+const decreaseBtn = document.querySelector('#decreaseBtn');
+const resetBtn = document.querySelector('#resetBtn');
+const increaseBtn = document.querySelector('#increaseBtn');
 
-function trueOrFalse(val){
-    val === 10.4 ? 'True' : 'False';
-}
-console.log(trueOrFalse(10.34));
+decreaseBtn.addEventListener('click', decreaseNum);
+resetBtn.addEventListener('click', resetNum);
+increaseBtn.addEventListener('click', increaseNum);
 
-function bigOrSmall (val){
-    if (val <= 10){
-        return 'Small';
-    } else if (val <= 10 && val >= 30){
-        return 'Medium';
+function decreaseNum(e){
+    e.preventDefault();
+    count++;
+    numbers.textContent = count;
+    if (count < 0){
+        numbers.style.color = 'red';
+    } else if (count > 0){
+        numbers.style.color = 'green';
     } else {
-        return 'Large';
-    }
-}
-console.log(bigOrSmall(34));
-
-let coworkers = {
-    'john': {
-        'nickname': ['jojo'],
-        'income': '30k',
-    },
-    'mary': {
-        'nickname': ['may'],
-        'income': '26k',
-        'likes': []
+        numbers.style.color = 'black';
     }
 };
-function updating(rName, prop, val){
-    if (val === ''){
-        delete coworkers[rName][prop];
-    } else if (prop === 'nickname'){
-        coworkers[rName][prop] = coworkers[rName][prop] || [];
-        coworkers[rName][prop].push(val);
+console.log(count);
+function resetNum(e){
+    e.preventDefault();
+    count++;
+    if (count < 0){
+        numbers.style.color = 'red';
+    } else if (count > 0){
+        numbers.style.color = 'green';
     } else {
-        coworkers[rName][prop] = val;
+        numbers.style.color = 'black';
     }
-    return coworkers;
 };
-updating('mary', 'likes', 'candy');
-updating('john', 'nickname', 'fish');
-console.log(coworkers);
-
-let friendList = [
-    {
-        username: 'john',
-        followers: 14,
-        likes: 'coffee'
-    },
-    {
-        username: 'may',
-        followers: 1344,
-        likes: ''
+function increaseNum(e){
+    e.preventDefault();
+    count++;
+    if (count < 0){
+        numbers.style.color = 'red';
+    } else if (count > 0){
+        numbers.style.color = 'green';
+    } else {
+        numbers.style.color = 'black';
     }
-]
-function checking(name, val){
-    for (let i=0; i<friendList.length; i++){
-        if (friendList[i].username === name){
-            return friendList[i][val] || 'no value';
-        }
-    }
-    return 'no contant';
-}
-console.log(checking('john', 'followers'));
-
-class Book {
-    constructor(title, author, pages){
-        this.title = title;
-        this.author = author;
-        this.pages = pages;
-    }
-}
-book1 = new Book('sleep', 'james', 500);
-console.log(book1);
+};
