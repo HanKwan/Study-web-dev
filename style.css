@@ -1,32 +1,19 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
-.counter {
+#header {
+    background-color: rgb(4, 141, 95);
+    padding: 30px 20px;
+}
+#navBar {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 100vh;
+    justify-content: space-between;
+
 }
-#numbers {
-    margin: 20px 0;
-    font-size: 3rem;
+#header h3 {
+    color: aliceblue;
 }
-#decreaseBtn {
-    font-size: 1rem;
-    padding: 5px;
-    background-color: white;
-    margin-right: 5px;
-}
-#resetBtn {
-    font-size: 1rem;
-    padding: 5px;
-    background-color: white;
-    margin-right: 5px;
-}
-#increaseBtn {
-    font-size: 1rem;
-    padding: 5px;
-    background-color: white;
+#searching {
+    padding: 3px;
 }
