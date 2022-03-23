@@ -22,28 +22,49 @@ function bigOrSmall (val){
 console.log(bigOrSmall(34));
 
 let coworkers = {
-    'coworker01': {
-        'name': 'john',
-        'nickname': ['jo'],
-        'income': 1000
+    'john': {
+        'nickname': ['jojo'],
+        'income': '30k',
     },
-    'coworker02': {
-        'name': 'zero2',
-        'nickname': ['02'],
-        'income': 3000
+    'mary': {
+        'nickname': ['may'],
+        'income': '26k',
+        'likes': []
     }
-}
-function updating(id, prop, val){
+};
+function updating(rName, prop, val){
     if (val === ''){
-        delete coworkers[id][prop];
+        delete coworkers[rName][prop];
     } else if (prop === 'nickname'){
-        coworkers[id][prop] = coworkers[id][prop] || [];
-        coworkers[id][prop].push(val);
+        coworkers[rName][prop] = coworkers[rName][prop] || [];
+        coworkers[rName][prop].push(val);
     } else {
-        coworkers[id][prop] = val;
+        coworkers[rName][prop] = val;
     }
     return coworkers;
-}
-updating('coworker02', 'nickname', 'waifu');
-updating('coworker01', 'name', 'jomanji');
+};
+updating('mary', 'likes', 'candy');
+updating('john', 'nickname', 'fish');
 console.log(coworkers);
+
+let friendList = [
+    {
+        username: 'john',
+        followers: 14,
+        likes: 'coffee'
+    },
+    {
+        username: 'may',
+        followers: 1344,
+        likes: ''
+    }
+]
+function checking(name, val){
+    for (let i=0; i<friendList.length; i++){
+        if (friendList[i].username === name){
+            return friendList[i][val] || 'no value';
+        }
+    }
+    return 'no contant';
+}
+console.log(checking('john', 'followers'));
