@@ -10,7 +10,7 @@ increaseBtn.addEventListener('click', increaseNum);
 
 function decreaseNum(e){
     e.preventDefault();
-    count++;
+    count--;
     numbers.textContent = count;
     if (count < 0){
         numbers.style.color = 'red';
@@ -23,7 +23,8 @@ function decreaseNum(e){
 console.log(count);
 function resetNum(e){
     e.preventDefault();
-    count++;
+    count = 0;
+    numbers.textContent = count;
     if (count < 0){
         numbers.style.color = 'red';
     } else if (count > 0){
@@ -35,6 +36,7 @@ function resetNum(e){
 function increaseNum(e){
     e.preventDefault();
     count++;
+    numbers.textContent = count;
     if (count < 0){
         numbers.style.color = 'red';
     } else if (count > 0){
