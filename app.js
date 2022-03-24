@@ -4,6 +4,7 @@ let submit = document.querySelector('#submit');
 let lists = document.querySelector('#lists');
 
 form.addEventListener('submit', added);
+lists.addEventListener('click', deleted);
 
 function added(e) {
     e.preventDefault();
@@ -19,4 +20,11 @@ function added(e) {
     nBtn.className = 'xBtn';
     nBtn.textContent = 'X';
     li.appendChild(nBtn);
+}
+
+function deleted(e) {
+    if (e.target.classList.contains('xBtn')) {
+        let li = e.target.parentElement;
+        lists.removeChild(li);
+    }
 }
