@@ -17,5 +17,6 @@ function added(e) {
 
     let nBtn = document.createElement('button');
     nBtn.className = 'xBtn';
+    nBtn.textContent = 'X';
     li.appendChild(nBtn);
 }
