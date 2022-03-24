@@ -9,11 +9,42 @@
 #navBar {
     display: flex;
     justify-content: space-between;
-
 }
 #header h3 {
     color: aliceblue;
 }
 #searching {
     padding: 3px;
+}
+#main {
+    border: 1px dotted black;
+    margin-top: 30px;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#form {
+    border: 1px dotted black;
+    padding: 30px;
+    margin: 0 20px;
+}
+#addH {
+    padding: 3px;
+}
+#submit {
+    padding: 3px;
+}
+#theList {
+    border: 1px dotted black;
+    padding: 30px;
+    margin: 0 20px;
+}
+.aList {
+    padding: 6px 0;
+    list-style: none;
+}
+.xBtn {
+    float: right;
+    cursor: pointer;
 }

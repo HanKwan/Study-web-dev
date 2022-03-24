@@ -1,47 +1,21 @@
-let count = 0;
-const numbers = document.querySelector('#numbers');
-const decreaseBtn = document.querySelector('#decreaseBtn');
-const resetBtn = document.querySelector('#resetBtn');
-const increaseBtn = document.querySelector('#increaseBtn');
+let form = document.querySelector('#form');
+let addH = document.querySelector('#addH');
+let submit = document.querySelector('#submit');
+let lists = document.querySelector('#lists');
 
-decreaseBtn.addEventListener('click', decreaseNum);
-resetBtn.addEventListener('click', resetNum);
-increaseBtn.addEventListener('click', increaseNum);
+form.addEventListener('submit', added);
 
-function decreaseNum(e){
+function added(e) {
     e.preventDefault();
-    count--;
-    numbers.textContent = count;
-    if (count < 0){
-        numbers.style.color = 'red';
-    } else if (count > 0){
-        numbers.style.color = 'green';
-    } else {
-        numbers.style.color = 'black';
-    }
-};
-console.log(count);
-function resetNum(e){
-    e.preventDefault();
-    count = 0;
-    numbers.textContent = count;
-    if (count < 0){
-        numbers.style.color = 'red';
-    } else if (count > 0){
-        numbers.style.color = 'green';
-    } else {
-        numbers.style.color = 'black';
-    }
-};
-function increaseNum(e){
-    e.preventDefault();
-    count++;
-    numbers.textContent = count;
-    if (count < 0){
-        numbers.style.color = 'red';
-    } else if (count > 0){
-        numbers.style.color = 'green';
-    } else {
-        numbers.style.color = 'black';
-    }
-};
+    let newItem = addH.value;
+    let li = document.createElement('li');
+    li.className = 'aList';
+    li.appendChild(document.createTextNode(newItem));
+    lists.appendChild(li);
+
+    addH.value = '';
+
+    let nBtn = document.createElement('button');
+    nBtn.className = 'xBtn';
+    li.appendChild(nBtn);
+}
