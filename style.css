@@ -3,48 +3,55 @@
     margin: 0;
 }
 #header {
-    background-color: rgb(4, 141, 95);
-    padding: 30px 20px;
+    background-color: blueviolet;
+    padding: 20px 20px;
 }
 #navBar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;    
 }
-#header h3 {
-    color: aliceblue;
+#navBar h3 {
+    color: white; 
+    font-size: 25px;
 }
-#searching {
-    padding: 3px;
+#search {
+    padding: 4px;
 }
 #main {
-    border: 1px dotted black;
     margin-top: 30px;
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    border: 1px solid black;
 }
-#form {
+.section1 {
     border: 1px dotted black;
     padding: 30px;
-    margin: 0 20px;
+    margin: 20px;
 }
-#addH {
-    padding: 3px;
+.addH {
+    padding: 3px 0;
+    margin-right: 15px;
+    border: 1px solid black;
 }
-#submit {
-    padding: 3px;
+.submit {
+    padding: 3px 3px;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
 }
-#theList {
+.section2 {
     border: 1px dotted black;
     padding: 30px;
-    margin: 0 20px;
+    margin: 20px;
+}
+.lists {
+    list-style: none;
+    padding: 0;
 }
 .aList {
-    padding: 6px 0;
-    list-style: none;
+    padding: 10px 0;
 }
 .xBtn {
     float: right;
-    cursor: pointer;
+    padding: 3px;
+    background-color: white;
+    border: 1px solid black;
 }
