@@ -1,0 +1,47 @@
+body::before {
+    display: block;
+    content: "";
+    height: 50px;
+}
+
+.snow {
+    width: 500px;
+}
+
+.the-about {
+    display: flex;
+    align-items: center;
+}
+
+.the-main {
+    margin-top: 20px;
+}
+
+.laptop {
+    width: 400px;
+    margin-left: 50px;
+}
+@media (max-width:768px) {
+    .snow {
+        width: 300px;
+    }
+    .the-about {
+        flex-direction: column;
+    }
+    .laptop {
+        width: 250px;
+        margin: 0;
+    }
+    .explain {
+        text-align: center;
+    }
+}
+@media (max-width:992px) {
+    .snow {
+        width: 300px;
+        margin-left: 10px;
+    }
+    .laptop {
+        width: 280px;
+    }
+}
