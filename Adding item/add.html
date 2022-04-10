@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="add.css">
+    <title>Making list</title>
+</head>
+<body>
+    <header id="main-header">
+        <nav class="navbar">
+            <h1>Item adder</h1>
+            <input type="text" placeholder="Search" id="search">
+        </nav>
+    </header>
+    <main id="main">
+        <section class="add-here">
+            <h1>Add items</h1>
+            <form id="addForm">
+                <input type="text" class="type-here" id="texting">
+                <input type="submit" class="submit-btn" value="submit">
+            </form>
+        </section>
+        <section id="the-list">
+            <h2>Item lists</h2>
+            <ul id="pList">
+                <li class="in-list">example 1 <button class="btn-x"><i class="fas fa-trash"></i></button></li>
+                <li class="in-list">example 2 <button class="btn-x"><i class="fas fa-trash"></i></button></li>
+                <li class="in-list">example 3 <button class="btn-x"><i class="fas fa-trash"></i></button></li>
+            </ul>
+        </section>
+    </main>
+    <script src="add.js"></script>
+</body>
+</html>
