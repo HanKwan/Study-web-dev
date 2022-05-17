@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="bg-gray-100">
+    <div class="h-[39rem] text-gray-100 relative">
+        <div class="w-full h-[34rem] bg-no-repeat bg-cover" style="background-image: url('img/hallway.jpg');">
+            <nav class="py-8 px-10 md:flex items-center md:justify-between">
+                <div class="md:flex items-center justify-between">
+                    <div class="flex justify-between">
+                        <h1 class="text-2xl pr-10"><a href="#">BERUMAH</a></h1>
+                        <div class="md:hidden cursor-pointer px-4" id="burger">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                        </div>
+                    </div>
+                    <ul class="md:flex hidden md:block text-sm" id="menu">
+                        <li class="pr-8"><a href="#">Product</a></li>
+                        <li class="pr-8"><a href="#">Services</a></li>
+                        <li class="pr-8"><a href="#">About Us</a></li>
+                        <li class="pr-8"><a href="#">News</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="flex items-center text-sm mt-3">
+                        <li><a href="#" class="border-solid rounded md:border-2 py-1 md:px-3 md:hover:bg-gray-100 md:hover:text-gray-600 transition ease-out duration-500">Log In</a></li>
+                        <li class="md:ml-8 md:border-solid rounded md:border-2 py-1 px-3 md:hover:bg-gray-100 md:hover:text-gray-600 transition ease-out duration-500"><a href="#">Sign Up</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="mx-10 md:mt-12">
+                <div class="text-3xl text-left">Everyone can own a house.<br>Only with Berumah</div>
+                <div class="text-sm text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Distinctio sed omnis dolorem in est,<br>qui quasi? Rerum voluptas amet in.</div>
+            </div>
+            <div class="mx-10 text-gray-600 absolute bottom-12 md:bottom-7">
+                <div class="flex">
+                    <span class="py-3 bg-white px-6"><a href="#">Home</a></span>
+                    <span class="py-3 bg-gray-100 px-6"><a href="#">Apartment</a></span>
+                </div>
+                <form class="md:grid grid-cols-4 shadow-sm px-3 py-2 bg-white items-center text-sm">
+                    <div>
+                        <label for="location" class="py-2"><h4>Location</h4></label>
+                        <input type="text" class="py-2 border-b-2 md:border-r-2 md:border-b-0 border-gray-200" value="Los Angeles, California"><span></span></input>
+                    </div>                    
+                    <div>
+                        <label for="type" class="py-2"><h4>Type</h4></label>
+                        <input type="text" class="py-2 border-b-2 md:border-r-2 md:border-b-0 border-gray-200" value="Minimalist"><span></span></input>
+                    </div>
+                    <div>
+                        <label for="prize" class="py-2"><h4>Prize</h4></label> 
+                        <input type="text" class="py-2" value="$10,000 - $100,000"><span></span></input>
+                    </div>
+                    <div class="flex justify-center">
+                        <input class="py-2 px-5 border-solid border-2 bg-blue-700 text-white border-blue-600" type="submit" value="Search"></input>
+                    </div>                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <main class="md:py-8 px-10 text-gray-600">
+        <section class="text-center py-8">
+            <div class="text-black pb-2 text-2xl">Most Searched Locations</div>
+            <div class="text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident delectus magnam ex fugiat, totam libero.</div>
+            <div class="grid md:grid-cols-3 gap-10 mt-5">
+                <div class="bg-white rounded flex md:block overflow-hidden shadow-md">
+                    <div class="w-full h-48 md:h-65% object-cover"><img src="img/house01.jpg" alt=""></div>
+                    <div class="p-3">
+                        <span class="text-lg text-black"><p>Bandung, Indonesia</p></span>
+                        <span class="text-sm block">100+ Places</span>
+                        <span class="text-sm ">4.4(1.2 Review)</span>
+                    </div>
+                </div>
+                <div class="bg-white rounded overflow-hidden flex md:block shadow-md">
+                    <div class="w-full h-48 md:h-65% object-cover"><img src="img/house02.jpg" alt=""></div>
+                    <div class="p-3">
+                        <span class="text-lg text-black"><p>Jakarta, Indonesia</p></span>
+                        <span class="text-sm">180+ Places</span><br>
+                        <span class="text-sm">4.4(1.2 Review)</span>
+                    </div>
+                </div>
+                <div class="bg-white rounded overflow-hidden shadow-md flex md:block">
+                    <div class="w-full h-48 md:h-65% object-cover"><img src="img/house03.jpg" alt=""></div>
+                    <div class="p-3">
+                        <span class="text-lg text-black"><p>Bekasi, Indonesia</p></span>
+                        <span class="text-sm">100+ Places</span><br>
+                        <span class="text-sm">4.4(1.2 Review)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="m-8">
+            <div class="grid md:grid-cols-2">
+                <div class="bg-center rounded" style="background-image: url('img/review01.jpg');"></div>
+                <div class="grid grid-rows-3 pl-4">
+                    <div>
+                        <span class="text-black text-2xl font-bold">With Us Help You Find<br>Your Dream Home</span>
+                        <span class="text-sm block mt-2 text-gray-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis tempora corporis suscipit quidem facere minima.</span>
+                    </div>
+                    <div class="row-span-2">
+                        <div class="pt-4">
+                            <div class="text-2xl text-blue-400">10K+</div>
+                            <div class="text-sm text-gray-400">Happy customers with our service</div>
+                        </div>
+                        <div class="pt-4">
+                            <div class="text-2xl text-blue-400">242K+</div>
+                            <div class="text-sm text-gray-400">The best propert we provide</div>
+                        </div>
+                        <div class="pt-4">
+                            <div class="text-2xl text-blue-400">432K+</div>
+                            <div class="text-sm text-gray-400">Companies affiliated with us</div>
+                        </div>
+                        <div class="text-sm text-white bg-blue-400 border rounded text-center p-2 my-3 mx-5">See More</div>
+                    </div>
+                </div>
+            </div>    
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
