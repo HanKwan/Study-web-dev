@@ -42,7 +42,7 @@
                     <span class="py-3 bg-gray-100 px-6"><a href="#">Apartment</a></span>
                 </div>
                 <form class="md:grid grid-cols-4 shadow-sm px-3 py-2 bg-white items-center text-sm">
-                    <div>
+                    <div class="mr-4">
                         <label for="location" class="py-2"><h4>Location</h4></label>
                         <input type="text" class="py-2 border-b-2 md:border-r-2 md:border-b-0 border-gray-200" value="Los Angeles, California"><span></span></input>
                     </div>                    
@@ -67,15 +67,15 @@
             <div class="text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident delectus magnam ex fugiat, totam libero.</div>
             <div class="grid md:grid-cols-3 gap-10 mt-5">
                 <div class="bg-white rounded flex md:block overflow-hidden shadow-md">
-                    <div class="w-full h-48 md:h-65% object-cover"><img src="img/house01.jpg" alt=""></div>
-                    <div class="p-3">
+                    <img src="img/house01.jpg" class="w-full h-32 sm:h-48 object-cover">    <!-- add the class to the image and not the div -->
+                    <div class="m-3">
                         <span class="text-lg text-black"><p>Bandung, Indonesia</p></span>
                         <span class="text-sm block">100+ Places</span>
                         <span class="text-sm ">4.4(1.2 Review)</span>
                     </div>
                 </div>
                 <div class="bg-white rounded overflow-hidden flex md:block shadow-md">
-                    <div class="w-full h-48 md:h-65% object-cover"><img src="img/house02.jpg" alt=""></div>
+                    <img src="img/house02.jpg" class="w-full h-32 sm:h-48 object-cover">
                     <div class="p-3">
                         <span class="text-lg text-black"><p>Jakarta, Indonesia</p></span>
                         <span class="text-sm">180+ Places</span><br>
@@ -83,7 +83,7 @@
                     </div>
                 </div>
                 <div class="bg-white rounded overflow-hidden shadow-md flex md:block">
-                    <div class="w-full h-48 md:h-65% object-cover"><img src="img/house03.jpg" alt=""></div>
+                    <img src="img/house03.jpg" class="w-full h-32 sm:h-48 object-cover">
                     <div class="p-3">
                         <span class="text-lg text-black"><p>Bekasi, Indonesia</p></span>
                         <span class="text-sm">100+ Places</span><br>
