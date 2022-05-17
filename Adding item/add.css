@@ -1,0 +1,68 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+#main-header {
+    background-color: teal;
+    padding: 30px 0;
+}
+.navbar {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+}
+.navbar h1{
+    margin: 0px;
+    color: white;
+}
+#main{
+    border: 1px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+
+.add-here{
+    border: 1px solid black;
+    padding: 30px;
+    margin-bottom: 10px;
+}
+.add-here h1{
+    margin-top: 0px;
+}
+.add-here input{
+    padding: 3px 0;
+}
+.add-here .submit-btn{
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding: 5px 5px;
+    cursor: pointer;
+    background-color: black;
+}
+#the-list{
+    border: 1px solid black;
+    padding: 10px;
+}
+#pList{
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+#pList .in-list{
+    border: 1px dotted black;
+    padding: 10px 5px;
+}
+#pList .btn-x{
+    float: right;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+}
+.fa-trash{
+    pointer-events: none;
+}

@@ -1,0 +1,137 @@
+body{
+    font-size: 16px;
+    font-family: arial, helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6em;
+    background-color: #f4f4f4;
+}
+
+.container{
+    overflow: hidden;
+    margin: 0;
+    padding: 0 20px;
+}
+
+#main-header{
+    background-color: rgb(129, 56, 29);
+    margin: 0;
+    color: white;
+}
+
+#navbar{
+    background-color: rgb(63, 59, 59);
+}
+
+#navbar ul{
+    list-style: none;
+    padding: 0;
+}
+
+#navbar li{
+    display: inline-block;
+    padding-right: 30px;
+}
+
+#navbar ul li::after{
+    content: '';
+    width: 0%;
+    display: block;
+    height: 2px;
+    background: coral;
+    margin: auto;
+    transition: 0.5s;
+}
+#navbar ul li:hover::after{
+    width: 100%;
+}
+#navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+#showcase {
+    background-image: url("../images/computer01.jpg"); 
+    background-size: cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+}
+
+#showcase h2{
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 90px;
+    line-height: 1.6em;
+    font-size: 40px;
+}
+
+#showcase p{
+    color: whitesmoke;
+    margin-bottom: 30px;
+}
+
+#profile {
+    background-color:#f4f4f4;
+}
+
+#profile img{
+    width: 60px;
+    border-radius: 20px;
+    float: left;
+    margin: 10px 0;
+    margin-right: 10px;
+    cursor: pointer;
+    filter: drop-shadow(0px 3px 3px black);
+}
+#profile .container{
+    font-size: 10px;
+    margin: 0%;
+}
+
+#main-topic{
+    float: left;
+    width: 75%;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+#sidetext {
+    background-color: gray;
+    color: white;
+    width: 20%;
+    margin-right: 30px;
+    margin-top: 50px;
+    float: right;
+    box-sizing: border-box;
+}
+
+#Mfooter {
+    text-align: center;
+}
+
+.feedback {
+    background-color: rgb(77, 65, 65);
+    border: 5px;
+    color:white;
+    position: fixed;
+    top: 290px;
+    text-decoration: none;
+    padding: 7px;
+    right: 0;
+}
+.feedback:hover{
+    background-color: rgb(235, 62, 62);
+    transition: 0.5s;
+}
+
+@media (max-width:600px){
+    #main-topic{
+        width: 100%;
+        float: none;
+    }
+    #sidetext{
+        width: 100%;
+        float: none;
+    }
+}
