@@ -41,18 +41,18 @@
                     <span class="py-3 bg-white px-6"><a href="#">Home</a></span>
                     <span class="py-3 bg-gray-100 px-6"><a href="#">Apartment</a></span>
                 </div>
-                <form class="md:grid grid-cols-4 shadow-sm px-3 py-2 bg-white items-center text-sm">
-                    <div class="mr-4">
+                <form class="md:grid grid-cols-4 shadow-sm px-1 py-2 bg-white items-center text-sm">
+                    <div class="md:mr-4">
                         <label for="location" class="py-2"><h4>Location</h4></label>
-                        <input type="text" class="py-2 border-b-2 md:border-r-2 md:border-b-0 border-gray-200" value="Los Angeles, California"><span></span></input>
+                        <input type="text" class="py-2 px-2 border-b-2 md:border-r-2 md:border-b-0 border-gray-200" value="Los Angeles, California"><span></span></input>
                     </div>                    
                     <div>
                         <label for="type" class="py-2"><h4>Type</h4></label>
-                        <input type="text" class="py-2 border-b-2 md:border-r-2 md:border-b-0 border-gray-200" value="Minimalist"><span></span></input>
+                        <input type="text" class="py-2 px-2 border-b-2 md:border-r-2 md:border-b-0 border-gray-200" value="Minimalist"><span></span></input>
                     </div>
                     <div>
                         <label for="prize" class="py-2"><h4>Prize</h4></label> 
-                        <input type="text" class="py-2" value="$10,000 - $100,000"><span></span></input>
+                        <input type="text" class="py-2 px-2" value="$10,000 - $100,000"><span></span></input>
                     </div>
                     <div class="flex justify-center">
                         <input class="py-2 px-5 border-solid border-2 bg-blue-700 text-white border-blue-600" type="submit" value="Search"></input>
@@ -61,9 +61,9 @@
             </div>
         </div>
     </div>
-    <main class="md:py-8 px-10 text-gray-600">
+    <main class="md:py-8 px-12 text-gray-600">
         <section class="text-center py-8">
-            <div class="text-black pb-2 text-2xl">Most Searched Locations</div>
+            <div class="text-black pb-2 font-bold text-2xl">Most Searched Locations</div>
             <div class="text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident delectus magnam ex fugiat, totam libero.</div>
             <div class="grid md:grid-cols-3 gap-10 mt-5">
                 <div class="bg-white rounded flex md:block overflow-hidden shadow-md">
@@ -92,7 +92,7 @@
                 </div>
             </div>
         </section>
-        <section class="m-8">
+        <section class="md:mx-8 md:my-12 mb-10">
             <div class="grid md:grid-cols-2">
                 <div class="bg-center rounded" style="background-image: url('img/review01.jpg');"></div>
                 <div class="grid grid-rows-3 pl-4">
@@ -118,7 +118,125 @@
                 </div>
             </div>    
         </section>
+        <section class="md:mx-8 md:my-20">
+            <span class="text-2xl font-bold text-black m-3">Popular Property Deals</span>
+            <div class="grid md:grid-cols-4 gap-6 mb-10 mt-7">
+                <div class="bg-white rounded overflow-hidden shadow-md">
+                    <img src="img/house04.jpg" class="w-full h-32 sm:h-48 object-cover">
+                    <div class="p-4">
+                        <div class="text-lg border-b border-gray-200 mb-3">
+                            <span class="text-blue-400">$ 36.021</span>
+                            <span class="block font-bold">The Minimalist House</span>
+                        </div>
+                        <div class="text-sm">
+                            <svg class="w-4 inline-block h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            <span class=" mr-4">Kec, balaraja, Banten</span>
+                            <svg class="w-4 inline-block h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path></svg>
+                            <span>1278 SQFT</span>
+                        </div>
+                        <div class="text-sm">
+                            <span class="mr-4">2 Bathrooms</span>
+                            <span>4 Bedrooms</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded overflow-hidden shadow-md">
+                    <img src="img/villa01.jpg" class="w-full h-32 sm:h-48 object-cover">
+                    <div class="p-4">
+                        <div class="text-lg border-b border-gray-200 mb-3">
+                            <span class="text-blue-400">$ 50.021</span>
+                            <span class="block font-bold">The Villa</span>
+                        </div>
+                        <div class="text-sm">
+                            <svg class="w-4 inline-block h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            <span class=" mr-4">Kec, balaraja, Banten</span>
+                            <svg class="w-4 inline-block h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path></svg>
+                            <span>1278 SQFT</span>
+                        </div>
+                        <div class="text-sm">
+                            <span class="mr-4">2 Bathrooms</span>
+                            <span>4 Bedrooms</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded overflow-hidden shadow-md">
+                    <img src="img/saRapita01.jpg" class="w-full h-32 sm:h-48 object-cover">
+                    <div class="p-4">
+                        <div class="text-lg border-b border-gray-200 mb-3">
+                            <span class="text-blue-400">$ 79.021</span>
+                            <span class="block font-bold">The SaRapita</span>
+                        </div>
+                        <div class="text-sm">
+                            <svg class="w-4 inline-block h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            <span class=" mr-4">Kec, balaraja, Banten</span>
+                            <svg class="w-4 inline-block h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path></svg>
+                            <span>1278 SQFT</span>
+                        </div>
+                        <div class="text-sm">
+                            <span class="mr-4">2 Bathrooms</span>
+                            <span>4 Bedrooms</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded overflow-hidden shadow-md">
+                    <img src="img/apartment01.jpg" class="w-full h-32 sm:h-48 object-cover">
+                    <div class="p-4">
+                        <div class="text-lg border-b border-gray-200 mb-3">
+                            <span class="text-blue-400">$ 20.021</span>
+                            <span class="block font-bold">The Apartment</span>
+                        </div>
+                        <div class="text-sm">
+                            <svg class="w-4 inline-block h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            <span class=" mr-4">Kec, balaraja, Banten</span>
+                            <svg class="w-4 inline-block h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path></svg>
+                            <span>800 SQFT</span>
+                        </div>
+                        <div class="text-sm">
+                            <span class="mr-4">1 Bathrooms</span>
+                            <span>2 Bedrooms</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="md:mx-8 md:mt-20 border rounded">
+            <div class="bg-slate-800 md:px-5 py-10 text-center">
+                <span class="text-gray-100 text-4xl">Subscribe Our Notfication,<br>News & Blog</span>
+                <form class="mt-6" action="">
+                    <input class="py-1 px-2" type="text" name="gmail" value="your@gmail.com">
+                    <input type="submit" class="py-1 px-2 bg-blue-700 text-gray-100" value="Get Started">
+                </form>
+            </div>
+        </section>
     </main>
+    <footer class="md:px-12">
+        <div class="md:grid mx-8 my-20 grid-cols-2">
+            <div class="mb-5">
+                <span class="uppercase text-black text-lg">Berumah</span>
+                <span class="text-sm text-gray-600 block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eligendi aperiam repudiandae cum aliquid fugit beatae corporis suscipit quibusdam labore.</span>
+            </div>
+            <div class="grid grid-cols-3 mx-5">
+                <div>
+                    <span class=" text-sm uppercase text-blue-700 pt-3"><a href="#">supprot</a></span>
+                    <span class="text-sm block pt-3 text-gray-500"><a href="#">Product</a></span>
+                    <span class="text-sm block pt-3 text-gray-500"><a href="#">Contact</a></span>
+                    <span class="text-sm block pt-3 text-gray-500"><a href="#">About</a></span>
+                </div>
+                <div>
+                    <span class=" text-sm uppercase text-blue-700 pt-3"><a href="#">legal</a></span>
+                    <span class="text-sm block pt-3 text-gray-500"><a href="#">Privacy Policy</a></span>
+                    <span class="text-sm block pt-3 text-gray-500"><a href="#">Terms Of Service</a></span>
+                    <span class="text-sm block pt-3 text-gray-500"><a href="#">Copyright</a></span>
+                </div>
+                <div>
+                    <span class=" text-sm uppercase text-blue-700 pt-3"><a href="#">social media</a></span>
+                    <span class="text-sm block pt-3 text-gray-500"><a href="#">Linkedin</a></span>
+                    <span class="text-sm block pt-3 text-gray-500"><a href="#">Instagram</a></span>
+                    <span class="text-sm block pt-3 text-gray-500"><a href="#">Twitter</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="app.js"></script>
 </body>
 </html>
