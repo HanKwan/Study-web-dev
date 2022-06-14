@@ -1,44 +1,13 @@
-let addForm = document.querySelector('#addForm');
-let lists = document.querySelector('.lists');
-let search = document.querySelector('#search');
+const timeEl = document.querySelector('#h-min');
+const second = document.querySelector('#second');
+const dateEl = document.querySelector('.date');
 
-addForm.addEventListener('submit', onAdd);
-lists.addEventListener('click', onDelete);
-search.addEventListener('keyup', onSearch);
-
-function onAdd(e) {
-    e.preventDefault();
-    let txtItm = document.querySelector('.addH').value;
-    let li = document.createElement('li');
-    li.appendChild(document.createTextNode(txtItm));
-    li.classList = 'aList';
-    lists.appendChild(li);
-
-    document.querySelector('.addH').value = '';
-
-    let xBtn = document.createElement('button');
-    xBtn.classList = 'xBtn';
-    xBtn.textContent = 'X';
-    li.appendChild(xBtn);
-}
-
-function onDelete(e) {
-    e.preventDefault();
-    if (e.target.classList.contains('xBtn')) {
-        let li = e.target.parentElement;
-        lists.removeChild(li);
-    }
-}
-
-function onSearch(e) {
-    let newItm = document.getElementsByTagName('li');
-    let text = e.target.value.toLowerCase()
-    Array.from(newItm).forEach(function(z) {
-        let names = z.firstChild.textContent;
-        if (names.toLowerCase().indexOf(text) != -1) {
-            z.style.display = 'block';
-        } else {
-            z.style.display = 'none';
-        }
-    })
-}
+const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dev'];
+// setInterval(() => {
+    const time = new Date();
+    console.log(time);
+    timeEl.innerText = time.getHours() + ':' + time.getMinutes();
+    second.innerText = time.getSeconds();
+    dateEl.innerText = days[time.getDay()] + ', ' + time.getDate() + ' ' + months[time.getMonth()];
+// }, 1000);

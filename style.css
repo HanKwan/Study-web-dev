@@ -1,58 +1,19 @@
-* {
-    padding: 0;
-    margin: 0;
+body {
+    padding: 1rem 2rem;
 }
-#header {
-    background-color: blueviolet;
-    padding: 20px 20px;
-}
-#navBar {
+.time {
     display: flex;
-    justify-content: space-between;    
+    align-items: baseline;
 }
-#navBar h3 {
-    color: white; 
-    font-size: 25px;
+#h-min {
+    font-size: 3em;
+    margin-right: 1rem;
 }
-#search {
-    padding: 4px;
+#second {
+    font-size: 2em;
 }
-#main {
-    margin-top: 30px;
-    border: 1px solid black;
-}
-.section1 {
-    border: 1px dotted black;
-    padding: 30px;
-    margin: 20px;
-}
-.addH {
-    padding: 3px 0;
-    margin-right: 15px;
-    border: 1px solid black;
-}
-.submit {
-    padding: 3px 3px;
-    background-color: white;
-    border: 1px solid black;
-    cursor: pointer;
-}
-.section2 {
-    border: 1px dotted black;
-    padding: 30px;
-    margin: 20px;
-}
-.lists {
-    list-style: none;
-    padding: 0;
-}
-.aList {
-    padding: 10px 0;
-}
-.xBtn {
-    float: right;
-    cursor: pointer;
-    padding: 3px;
-    background-color: white;
-    border: 1px solid black;
+.date {
+    display: flex;
+    margin-top: 1rem;
+    font-size: 2rem;
 }
