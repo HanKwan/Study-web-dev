@@ -13,10 +13,14 @@ body {
     text-align: center;
     display: flex;
     justify-content: center;
-    margin: 3em 2em;
+    margin: 2em 2em;
 }
 #dateLocation {
     font-size: 30px;
+}
+.date {
+    margin-top: 5px;
+    font-size: 20px;
 }
 .container2 {
     display: flex;
@@ -78,18 +82,18 @@ body {
     }
     #temp {
         font-size: 50px;
-        margin-top: 50px;
+        margin-top: 10px;
     }
     .section2 {
         overflow-x: scroll;
         justify-content: start;
     }
     .container1 {
-        margin: 40px 0;
+        margin: 20px;
     }
     .otherProps {
         width: 80%;
-        margin-top: 40px;
+        margin-top: 10px;
     }
     .eachProp {
         margin-bottom: 5px;
