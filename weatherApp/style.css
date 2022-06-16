@@ -1,0 +1,100 @@
+body {
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-family: arial, helvetica, sans-serif;
+    background-image: url("/imgs/cloudy.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+}
+.container1 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 3em 2em;
+}
+#dateLocation {
+    font-size: 30px;
+}
+.container2 {
+    display: flex;
+    justify-content: center;
+}
+.otherProps {
+    width: 270px;
+}
+#temp {
+    display: flex;
+    align-items: center;
+    font-size: 60px;
+}
+#temp img {
+    padding: 0 10px;
+    width: 2em;
+}
+#temp span {
+    padding: 0 20px;
+}
+.eachProp {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.section2 {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.smallDay {
+    display: flex;
+    margin: 0 20px;
+    flex-direction: column;
+    width: 120px;
+    padding-bottom: 20px;
+}
+.smDisplay {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.smDisplay img {
+    height: 100px;
+    width: 100px;
+}
+.dtntVal {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 730px){
+    body {
+        background: cover;
+    }
+    #temp {
+        font-size: 50px;
+        margin-top: 50px;
+    }
+    .section2 {
+        overflow-x: scroll;
+        justify-content: start;
+    }
+    .container1 {
+        margin: 40px 0;
+    }
+    .otherProps {
+        width: 80%;
+        margin-top: 40px;
+    }
+    .eachProp {
+        margin-bottom: 5px;
+    }
+    #temp img {
+        width: auto;
+    }
+}
