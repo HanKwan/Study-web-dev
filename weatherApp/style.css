@@ -74,6 +74,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 5px;
+    font-size: 13px;
 }
 
 @media only screen and (max-width: 730px){
@@ -81,7 +82,7 @@ body {
         background: cover;
     }
     #temp {
-        font-size: 50px;
+        font-size: 40px;
         margin-top: 10px;
     }
     .section2 {
