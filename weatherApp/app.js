@@ -18,6 +18,7 @@ function getWeather() {
 function showWeather(data) {
     if (data.current.weather[0].icon === '01d') {
         document.body.style.backgroundImage = "url('/imgs/sunny.jpg')";
+        document.body.style.color = "black";
     } else if (data.current.weather[0].icon === '02d') {
         document.body.style.backgroundImage = "url('/imgs/aBitCloudy.jpg')";
     } else if (data.current.weather[0].icon === '03d' || data.current.weather[0].icon === '04d') {
